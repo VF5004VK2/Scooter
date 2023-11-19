@@ -1,0 +1,629 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --yellow: #FCB72B;
+    --darkNavy: #495567;
+    --dimGrey: #939CAA;
+    --lightGrey: #E5ECF4;
+    --snow: #F2F5F9;
+    --lightYellow: #FFF4DF;
+}
+
+.nav {
+    width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    padding: 0 165px;
+}
+
+.navigation {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navListSection {
+    display: flex;
+    align-items: center;
+}
+
+.navList {
+    padding-left: 58px;
+    display: flex;
+    column-gap: 32px;
+}
+
+.navListItemLink {
+    font-family: "SpaceMono";
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--dimGrey);
+    line-height: 25px;
+}
+
+.navBtn {
+    padding: 14px 39px;
+    background: var(--yellow);
+    color: white;
+    font-family: "SpaceMono";
+    border: unset;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    transition: .5s;
+}
+
+.navBtn:hover {
+    cursor: pointer;
+    border: 3px solid var(--yellow);
+    background: transparent;
+    color: var(--yellow);
+}
+
+
+.introSection {
+    position: relative;
+}
+
+.headerIntro {
+    background: url(./img/Bitmap.jpg) center center / cover;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introTitle {
+    color: white;
+    font-family: "SpaceMono";
+    font-weight: 700;
+    line-height: 56px;
+    width: 550px;
+    font-size: 56px;
+    padding-bottom: 40px;
+}
+
+.m-95 {
+    margin-left: 95px;
+}
+
+.introText {
+    width: 405px;
+    color: white;
+    font-family: "SpaceMono";
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom: 40px;
+}
+
+.headerLine {
+    position: absolute;
+    top: 210px;
+    left: 0;
+}
+
+.headerLineArrov {
+    position: absolute;
+    top: 210px;
+    left: 720px;
+}
+
+/* List */
+
+.mainList {
+    margin-top: 160px;
+}
+
+.mainListItems {
+    display: flex;
+    column-gap: 30px;
+}
+
+.listItemImage {
+    padding-bottom: 40px;
+}
+
+.listItemTitle {
+    color: var(--darkNavy);
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "SpaceMono";
+    line-height: 28px;
+    padding-bottom: 27px;
+}
+
+.listItemText {
+    color: var(--dimGrey);
+    font-family: "SpaceMono";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.mainListItems {
+    position: relative;
+}
+
+.listItemZIndex {
+    z-index: -1;
+    position: absolute;
+    top: 45px;
+    width: 1300px;
+    left: 0;
+}
+
+/* Profiles */
+
+.profiles {
+    margin-top: 200px;
+    width: 100%;
+}
+
+.profilesList {
+    display: flex;
+    flex-direction: column;
+    row-gap: 300px;
+    padding-left: 300px;
+}
+
+.profileItem {
+    display: flex;
+    position: relative;
+}
+
+.profileItemDesc {
+    margin-right: 220px;
+}
+
+.profileItemDescTitle {
+    color: var(--darkNavy);
+    font-weight: 700;
+    font-size: 48px;
+    font-family: "SpaceMono";
+    line-height: 48px;
+    width: 480px;
+    padding-bottom: 24px;
+}
+
+.profileItemDescText {
+    color: var(--dimGrey);
+    font-weight: 400;
+    font-size: 15px;
+    font-family: "SpaceMono";
+    width: 700px;
+    padding-bottom: 40px;
+}
+
+.profileItemImage {
+    position: absolute;
+    top: -40px;
+    left: 1000px;
+}
+
+.profileItemLineArrow {
+    position: absolute;
+    top: 250px;
+    right: -160px;
+    width: 900px;
+}
+
+.profileItemPhotoL {
+    border-radius: 445px;
+    padding-right: 260px;
+}
+
+.profileItemLineArrowR {
+    position: absolute;
+    top: 0;
+    left: -540px;
+}
+
+.profileItemImage {
+    border-radius: 445px;
+}
+
+
+/* Footer */
+
+.footer {
+    margin-top: 310px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+
+.footerBackgroud {
+    background: url(./img/Mask.png) center center /cover;
+    height: 300px;
+}
+
+.footerContainer {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerTitle {
+    color: white;
+    font-size: 48px;
+    font-family: "SpaceMono";
+    font-weight: 700;
+    width: 450px;
+}
+
+.footerStores {
+    column-gap: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.footerEnd {
+    width: 100%;
+    background: #333A44;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.footerIcons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.FooterIconItem {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* About Page */
+
+.aboutHeader {
+    width: 100%;
+    height: 200px;
+    background: url(./aboutPageImages/Bitmap.png) center center / cover;
+}
+
+.aboutIntro {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.aboutIntroTitle {
+    color: #fff;
+    font-family: "SpaceMono";
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.aboutProfiles {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutProfileItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutProfileItemText {
+    padding-left: 165px;
+    column-gap: 24px;
+}
+
+.aboutProfileItemTitle {
+    color: var(--darkNavy);
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "SpaceMono";
+    width: 480px;
+}
+
+.aboutProfileItemParagraft {
+    width: 460px;
+    padding-top: 24px;
+    color: var(--dimGrey);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "SpaceMono";
+}
+
+.aboutProfiles {
+    row-gap: 120px;
+}
+
+.aboutProfileItemTextSecond {
+    padding-left: 700px;
+}
+
+.aboutProfileItemSecond {
+    display: flex;
+    align-items: center;
+}
+
+/* Information Start*/
+.aboutInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.aboutInformationTitle {
+    color: var(--darkNavy);
+    font-family: "SpaceMono";
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.aboutInformationContent {
+    display: flex;
+    column-gap: 200px;
+}
+
+.aboutInformationItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+
+.aboutInformationImage {
+    background: url(./aboutPageImages/Bitmap\ \(1\).png) center center / cover;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.aboutInformationImageSpan {
+    padding: 34px 34px;
+    background: var(--yellow);
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 190px;
+}
+
+.aboutInformationContentTitle {
+    padding-top: 90px;
+    color: var(--darkNavy);
+    font-family: "SpaceMono";
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.aboutInformationContentText {
+    text-align: center;
+    color: var(--dimGrey);
+    font-family: "SpaceMono";
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.aboutInformationImageSecont {
+    background: url(./aboutPageImages/Bitmap\ \(2\).png) center center / cover;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.aboutInformationImageThree {
+    background: url(./aboutPageImages/Bitmap\ \(3\).png) center center / cover;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.aboutInformationImageSpan {
+    color: var(--darkNavy);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "SpaceMono";
+}
+
+/* FAQs Start */
+.FAQs {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.FAQsString {
+    color: var(--darkNavy);
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    font-family: "SpaceMono";
+    margin-bottom: 65px;
+}
+
+.FAQsConent {
+    display: flex;
+    column-gap: 64px;
+    margin-bottom: 64px;
+}
+
+.FAQsTitle {
+    margin-left: 30px;
+    width: 30%;
+}
+
+.FAQsItemTitle {
+    color: var(--darkNavy);
+    font-family: "SpaceMono";
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.FAQsLabs {
+    width: 70%;
+    /* height: 100px; */
+    padding: 32px 40px;
+    background: #F2F5F9;
+    transition: .5s;
+    width: 100%;
+
+}
+
+.FAQsLabTexts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LabsIcon {
+    width: 26px;
+    height: 20px;
+}
+
+.FAQsContentDicoration {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 16px;
+}
+
+.LabsTitle {
+    color: var(--darkNavy);
+    font-family: "SpaceMono";
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.FAQsLabs:hover {
+    background: #FFF4DF;
+}
+.active{
+    display: block !important;
+
+}
+.FAQsLabs.active .LabsIcon{
+    transform: rotate(90deg);
+}
+.FAQsLabParagraph{
+    display: none;
+    padding-top: 24px;
+    font-family: "SpaceMono";
+    font-size: 15px;
+    color: var(--darkNavy);
+    font-weight: 400;
+}
+
+/* Careers */
+
+.careersIntro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: url(./aboutPageImages/Careers.png) center center / cover;
+}
+.careersInformation {
+    margin-top: 120px;
+}
+.box {
+    margin-top: 120px;
+
+}
+.boxcontent {
+    width: 100%;
+    padding: 32px 40px;
+    display: flex;
+    background: #F2F5F9;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.boxContectTitle {
+    color: #495567;
+    font-family: "SpaceMono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+
+
+}
+.boxContentText {
+    color: #495567;
+    font-family: "SpaceMono";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+.boxContentTexts {
+    display: flex;
+    flex-direction: column;
+}
+/* Locations */
+.loactions{
+    margin: 120px 0;
+    width: 100%;
+}
+.loactionsImage{
+    width: 100%;
+}
+.loactionsText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 120px;
+}
+.loactionsTitle{
+    color: var(--darkNavy);
+    font-family: "SpaceMono";
+    font-size: 48px;
+    font-weight: 700;
+    width: 400px;
+    padding-left: 30px;
+}
+.locationsParagraph{
+    color: var(--dimGrey);
+    font-size: 15px;
+    font-weight: 400px;
+    font-family: "SpaceMono";
+    width: 600px;
+    text-align: left;
+}
